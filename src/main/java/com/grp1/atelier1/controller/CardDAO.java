@@ -25,7 +25,10 @@ public class CardDAO {
         myCardList.add(c1);
         myCardList.add(c2);
     }
-    public List<Card> getPoneyList() {
+    public void addCard(Card card) {
+        myCardList.add(card);
+    }
+    public List<Card> getCardList() {
         return this.myCardList;
     }
     public Card getCardById(int id){
