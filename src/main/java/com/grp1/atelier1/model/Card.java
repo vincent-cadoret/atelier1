@@ -1,34 +1,45 @@
 package com.grp1.atelier1.model;
 
-public class CardDTO {
+public class Card {
+
+    private int id;
     private String name;
     private String description;
     private String family;
     private String affinity;
     private String imgUrl;
-    private String smallImgUrl;
-    private int id;
-    private float energy;
-    private float hp;
-    private float defence;
-    private float attack;
-    private float price;
+    private String smallImageUrl;
+    private int energy;
+    private int hp;
+    private int defence;
+    private int attack;
+    private int price;
     private int userId;
 
-    public CardDTO(String name, String description, String family, String affinity, String imgUrl, String smallImgUrl, int id, float energy, float hp, float defence, float attack, float price, int userId) {
+
+public Card(int id, String name, String description, String family, String affinity, String imgUrl, String smallImageUrl, int energy, int hp, int defence, int attack, int price, int userId) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.family = family;
         this.affinity = affinity;
         this.imgUrl = imgUrl;
-        this.smallImgUrl = smallImgUrl;
-        this.id = id;
+        this.smallImageUrl = smallImageUrl;
         this.energy = energy;
         this.hp = hp;
         this.defence = defence;
         this.attack = attack;
         this.price = price;
         this.userId = userId;
+    }
+
+    // GETTER AND SETTER
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -71,59 +82,51 @@ public class CardDTO {
         this.imgUrl = imgUrl;
     }
 
-    public String getSmallImgUrl() {
-        return smallImgUrl;
+    public String getSmallImageUrl() {
+        return smallImageUrl;
     }
 
-    public void setSmallImgUrl(String smallImgUrl) {
-        this.smallImgUrl = smallImgUrl;
+    public void setSmallImageUrl(String smallImageUrl) {
+        this.smallImageUrl = smallImageUrl;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public float getEnergy() {
+    public int getEnergy() {
         return energy;
     }
 
-    public void setEnergy(float energy) {
+    public void setEnergy(int energy) {
         this.energy = energy;
     }
 
-    public float getHp() {
+    public int getHp() {
         return hp;
     }
 
-    public void setHp(float hp) {
+    public void setHp(int hp) {
         this.hp = hp;
     }
 
-    public float getDefence() {
+    public int getDefence() {
         return defence;
     }
 
-    public void setDefence(float defence) {
+    public void setDefence(int defence) {
         this.defence = defence;
     }
 
-    public float getAttack() {
+    public int getAttack() {
         return attack;
     }
 
-    public void setAttack(float attack) {
+    public void setAttack(int attack) {
         this.attack = attack;
     }
 
-    public float getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
