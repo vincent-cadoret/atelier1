@@ -6,12 +6,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MainController {
-    @RequestMapping(value = { "/", "/index", "search" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/search" }, method = RequestMethod.GET)
     public String searchCard() {
         return "searchCard";
     }
-    @RequestMapping(value = { "/add" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/addCard" }, method = RequestMethod.GET)
     public String addCard() {
-        return "form-sample";
+        return "formAddCard";
+    }
+    @RequestMapping(value = { "/addUser" }, method = RequestMethod.GET)
+    public String addUser() {
+        return "formAddUser";
     }
 }
