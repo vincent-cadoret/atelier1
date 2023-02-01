@@ -11,7 +11,5 @@ public class MainController {
         return "searchCard";
     }
     @RequestMapping(value = { "/add" }, method = RequestMethod.GET)
-    public String addCard() {
-        return "form-sample";
-    }
+    public String addCard() { return "form-sample"; }
 }
