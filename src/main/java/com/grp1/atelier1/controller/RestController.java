@@ -39,5 +39,4 @@ public class RestController {
         model.addAttribute("cardList",cardDAO.getCardList());
         return "cardViewList";
     }
-
 }
