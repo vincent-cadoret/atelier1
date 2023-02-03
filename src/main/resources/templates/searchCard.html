@@ -26,16 +26,16 @@
             <div class="column"></div>
             <div class="column"></div>
             <div class="column">
-                <form class="ui form" action="./getCard" method="GET" name="mySearch">
-                    <h3 class="ui dividing header">Select the Card Name to Search</h3>
+                <form class="ui form" action="/search" method="GET" name="mySearch">
+                    <h3 class="ui dividing header">Select the Card ID to Search</h3>
                     <div class="two fields">
                         <div class="field">
-                            <label>Card Name</label>
+                            <label>Card ID</label>
                         </div>
                         <div class="field">
                             <div class="ui transparent icon input">
-                                <input type="text" placeholder="Search..." name="search">
-                                <i class="search link icon"  onclick="mySearch.submit();"></i>
+                                <input type="text" placeholder="Search..." name="id">
+                                <i class="search link icon"  onclick="/search"></i>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                                 <span id="cardAttackId"></span> 
                             </span>
                             <i class="protect icon"></i>
-                           <span id="cardDefenceId"> </span> 
+                           <span id="cardDefenceId"> </span>
                         </div>
 
                     </div>

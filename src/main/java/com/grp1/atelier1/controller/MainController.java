@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 public class MainController {
-    @RequestMapping(value = {"/", "/index", "search"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/", "/index", "/search"}, method = RequestMethod.GET)
     public String searchCard() {
         return "searchCard";
     }
@@ -20,4 +20,5 @@ public class MainController {
     public String add() {
         return "form-sample";
     }
+
 }

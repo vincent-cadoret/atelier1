@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 public class ServiceController {
     CardDAO cardDao = new CardDAO();
-    @GetMapping("/card/{id}")
+    @GetMapping("/search?{id}")
     public Card getCardbyId(@PathVariable("id") int id) {
         return cardDao.getCardById(id);
     }
