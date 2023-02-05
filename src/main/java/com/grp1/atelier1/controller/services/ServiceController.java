@@ -12,7 +12,7 @@ import java.util.List;
 public class ServiceController {
     CardDAO cardDao = new CardDAO();
     @GetMapping("/search?{id}")
-    public Card getCardbyId(@PathVariable("id") int id) {
+    public Card getCardById(@PathVariable("id") int id) {
         return cardDao.getCardById(id);
     }
 
@@ -31,7 +31,6 @@ public class ServiceController {
         Card p = cardDao.addCard(cardForm.getId(), cardForm.getName(), cardForm.getDescription(), cardForm.getFamily(), cardForm.getAffinity(), cardForm.getImgUrl(), cardForm.getSmallImageUrl(),
                 cardForm.getEnergy(), cardForm.getHp(), cardForm.getDefence(), cardForm.getAttack(),
                 cardForm.getPrice(), cardForm.getUserId());
-        //model.addAttribute("myCard", p);
-        return "/card/random";
+        return "searchCard";
     }
 }
